@@ -1,0 +1,92 @@
+2021-11-04 08:44:06.699  INFO 28372 --- [main] com.up.scheduler.SchedulerApplication    : Starting SchedulerApplication using Java 11.0.12 on LAPTOP-S1PHOIGH with PID 28372 (C:\Projects\Schedular\target\classes started by andre in C:\Projects\Schedular)
+2021-11-04 08:44:06.701  INFO 28372 --- [main] com.up.scheduler.SchedulerApplication    : No active profile set, falling back to default profiles: default
+2021-11-04 08:44:06.941  INFO 28372 --- [main] scheduler                                : echo hi wourld
+2021-11-04 08:44:06.941  INFO 28372 --- [main] scheduler                                : 1 * * * * * 
+2021-11-04 08:44:06.999  INFO 28372 --- [main] com.up.scheduler.SchedulerApplication    : Started SchedulerApplication in 0.507 seconds (JVM running for 1.043)
+2021-11-04 08:45:01.012 ERROR 28372 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
+
+java.io.IOException: Cannot run program "echo": CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1128) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1071) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:589) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:413) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:310) ~[na:na]
+	at com.up.scheduler.Task.task(Task.java:29) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.3.12.jar:5.3.12]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.3.12.jar:5.3.12]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95) ~[spring-context-5.3.12.jar:5.3.12]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+Caused by: java.io.IOException: CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessImpl.create(Native Method) ~[na:na]
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:487) ~[na:na]
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:154) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1107) ~[na:na]
+	... 18 common frames omitted
+
+2021-11-04 08:46:01.005 ERROR 28372 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
+
+java.io.IOException: Cannot run program "echo": CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1128) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1071) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:589) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:413) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:310) ~[na:na]
+	at com.up.scheduler.Task.task(Task.java:29) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.3.12.jar:5.3.12]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.3.12.jar:5.3.12]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95) ~[spring-context-5.3.12.jar:5.3.12]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+Caused by: java.io.IOException: CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessImpl.create(Native Method) ~[na:na]
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:487) ~[na:na]
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:154) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1107) ~[na:na]
+	... 18 common frames omitted
+
+2021-11-04 08:47:01.011 ERROR 28372 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
+
+java.io.IOException: Cannot run program "echo": CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1128) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1071) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:589) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:413) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:310) ~[na:na]
+	at com.up.scheduler.Task.task(Task.java:29) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.3.12.jar:5.3.12]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.3.12.jar:5.3.12]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95) ~[spring-context-5.3.12.jar:5.3.12]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+Caused by: java.io.IOException: CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessImpl.create(Native Method) ~[na:na]
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:487) ~[na:na]
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:154) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1107) ~[na:na]
+	... 18 common frames omitted
+
